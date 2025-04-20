@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegrowpure - Naturally Yours</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Vegrowpure Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cart.html" class="cart-icon active"><i class="fas fa-shopping-cart"></i> <span
+                            class="cart-count">3</span></a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Shopping Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-wrapper">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="cart-header-item product-col">Product</div>
+                        <div class="cart-header-item price-col">Price</div>
+                        <div class="cart-header-item quantity-col">Quantity</div>
+                        <div class="cart-header-item subtotal-col">Subtotal</div>
+                        <div class="cart-header-item remove-col"></div>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="images/products/tomatoes.png" alt="Tomatoes">
+                            </div>
+                            <div class="product-details">
+                                <h3>Fresh Tomatoes</h3>
+                                <p class="product-variant">Organic</p>
+                            </div>
+                        </div>
+                        <div class="price-col">₹60/kg</div>
+                        <div class="quantity-col">
+                            <div class="quantity-input">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="2" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="subtotal-col">₹120</div>
+                        <div class="remove-col">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="images/products/spinach.png" alt="Spinach">
+                            </div>
+                            <div class="product-details">
+                                <h3>Organic Spinach</h3>
+                                <p class="product-variant">Fresh</p>
+                            </div>
+                        </div>
+                        <div class="price-col">₹40/bunch</div>
+                        <div class="quantity-col">
+                            <div class="quantity-input">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="subtotal-col">₹40</div>
+                        <div class="remove-col">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="images/products/potatoes.png" alt="Potatoes">
+                            </div>
+                            <div class="product-details">
+                                <h3>Fresh Potatoes</h3>
+                                <p class="product-variant">Regular</p>
+                            </div>
+                        </div>
+                        <div class="price-col">₹30/kg</div>
+                        <div class="quantity-col">
+                            <div class="quantity-input">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="3" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="subtotal-col">₹90</div>
+                        <div class="remove-col">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Actions -->
+                    <div class="cart-actions">
+                        <div class="coupon-form">
+                            <input type="text" placeholder="Coupon code">
+                            <button class="btn btn-outline">Apply Coupon</button>
+                        </div>
+                        <div class="cart-update">
+                            <button class="btn btn-outline">Update Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h2>Cart Totals</h2>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span>₹250</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>₹50</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Discount</span>
+                        <span>-₹25</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>₹275</span>
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+                    <div class="continue-shopping">
+                        <a href="products.html"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Vegrowpure Logo">
+                    </div>
+                    <p>Connecting farmers directly with consumers for fresh, organic vegetables at fair prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Mumbai, Maharashtra, India</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 7030727648</li>
+                        <li><i class="fas fa-envelope"></i> info@vegrowpure.in</li>
+                        <li><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vegrowpure. All Rights Reserved.</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

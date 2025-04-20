@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegrowpure - Naturally Yours</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Vegrowpure Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span
+                            class="cart-count">0</span></a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Product Details</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="active">Fresh Tomatoes</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-wrapper">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="images/products/tomatoes.png" alt="Fresh Tomatoes" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active" data-image="images/products/tomatoes.png">
+                            <img src="images/products/tomatoes.png" alt="Tomatoes Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" data-image="images/products/tomatoes.png">
+                            <img src="images/products/tomatoes.png" alt="Tomatoes Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" data-image="images/products/tomatoes.png">
+                            <img src="images/products/tomatoes.png" alt="Tomatoes Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" data-image="images/products/tomatoes.png">
+                            <img src="images/products/tomatoes.png" alt="Tomatoes Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Fresh Tomatoes</h1>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5 - 120 reviews)</span>
+                        </div>
+                        <div class="product-availability in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">₹60/kg</span>
+                        <span class="old-price">₹75/kg</span>
+                        <span class="discount-badge">20% Off</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Our fresh tomatoes are grown using organic farming methods without harmful pesticides. They
+                            are harvested at the peak of ripeness to ensure maximum flavor and nutritional value.</p>
+                        <p>Tomatoes are an excellent source of vitamin C, potassium, folate, and vitamin K. They are
+                            also a good source of the antioxidant lycopene, which has been linked to many health
+                            benefits, including reduced risk of heart disease and cancer.</p>
+                    </div>
+                    <div class="product-variants">
+                        <h3>Variant</h3>
+                        <div class="variant-options">
+                            <label class="variant-option active">
+                                <input type="radio" name="variant" value="organic" checked>
+                                <span>Organic</span>
+                            </label>
+                            <label class="variant-option">
+                                <input type="radio" name="variant" value="regular">
+                                <span>Regular</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product-quantity">
+                        <h3>Quantity</h3>
+                        <div class="quantity-input">
+                            <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <span class="quantity-unit">kg</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-buy-now">
+                            Buy Now
+                        </button>
+                        <button class="btn-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-details-accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Product Details</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul class="product-details-list">
+                                    <li><strong>Type:</strong> Organic Tomatoes</li>
+                                    <li><strong>Origin:</strong> Maharashtra, India</li>
+                                    <li><strong>Farming Method:</strong> Organic</li>
+                                    <li><strong>Certification:</strong> Organic Certified</li>
+                                    <li><strong>Shelf Life:</strong> 5-7 days at room temperature</li>
+                                    <li><strong>Storage:</strong> Store in a cool, dry place</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Nutritional Information</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <table class="nutritional-table">
+                                    <tr>
+                                        <th>Nutrient</th>
+                                        <th>Amount per 100g</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Calories</td>
+                                        <td>18 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carbohydrates</td>
+                                        <td>3.9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protein</td>
+                                        <td>0.9 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fat</td>
+                                        <td>0.2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiber</td>
+                                        <td>1.2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vitamin C</td>
+                                        <td>13.7 mg</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Shipping & Returns</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <p><strong>Shipping:</strong> We deliver within 24 hours of harvesting to ensure maximum
+                                    freshness. Delivery is available in select cities.</p>
+                                <p><strong>Returns:</strong> If you're not satisfied with the quality of the products,
+                                    you can request a refund or replacement within 24 hours of delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews (120)</button>
+                    <button class="tab-btn" data-tab="recipes">Recipes</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-content active" id="description">
+                        <h2>Product Description</h2>
+                        <p>Our fresh tomatoes are grown using organic farming methods without harmful pesticides. They
+                            are harvested at the peak of ripeness to ensure maximum flavor and nutritional value.</p>
+                        <p>Tomatoes are an excellent source of vitamin C, potassium, folate, and vitamin K. They are
+                            also a good source of the antioxidant lycopene, which has been linked to many health
+                            benefits, including reduced risk of heart disease and cancer.</p>
+                        <h3>Benefits of Organic Tomatoes</h3>
+                        <ul>
+                            <li>Higher in antioxidants compared to conventionally grown tomatoes</li>
+                            <li>Free from harmful pesticides and chemicals</li>
+                            <li>Better taste and flavor</li>
+                            <li>Environmentally friendly farming practices</li>
+                            <li>Supports local farmers and sustainable agriculture</li>
+                        </ul>
+                        <h3>How to Store</h3>
+                        <p>For maximum freshness, store tomatoes at room temperature away from direct sunlight.
+                            Refrigerating tomatoes can cause them to lose flavor and develop a mealy texture. If you
+                            need to store them for a longer period, you can refrigerate them, but bring them back to
+                            room temperature before consuming for the best flavor.</p>
+                    </div>
+                    <div class="tab-content" id="reviews">
+                        <h2>Customer Reviews</h2>
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-number">4.5</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="rating-count">Based on 120 reviews</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar-item">
+                                    <span class="rating-label">5 Star</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 70%;"></div>
+                                    </div>
+                                    <span class="rating-percent">70%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span class="rating-label">4 Star</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 20%;"></div>
+                                    </div>
+                                    <span class="rating-percent">20%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span class="rating-label">3 Star</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 5%;"></div>
+                                    </div>
+                                    <span class="rating-percent">5%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span class="rating-label">2 Star</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 3%;"></div>
+                                    </div>
+                                    <span class="rating-percent">3%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span class="rating-label">1 Star</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 2%;"></div>
+                                    </div>
+                                    <span class="rating-percent">2%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-list">
+                            <!-- Review 1 -->
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-image">
+                                        <img src="images/testimonials/customer1.png" alt="Reviewer">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Priya Sharma</h4>
+                                        <div class="review-date">May 15, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <h3>Excellent Quality!</h3>
+                                    <p>The tomatoes were fresh and juicy. They tasted so much better than what I usually
+                                        get from the supermarket. Will definitely order again!</p>
+                                </div>
+                            </div>
+
+                            <!-- Review 2 -->
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-image">
+                                        <img src="images/testimonials/customer2.png" alt="Reviewer">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Rajesh Patel</h4>
+                                        <div class="review-date">May 10, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <h3>Good Quality</h3>
+                                    <p>The tomatoes were fresh and tasted good. The delivery was prompt. I would
+                                        recommend these to anyone looking for organic produce.</p>
+                                </div>
+                            </div>
+
+                            <!-- Review 3 -->
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-image">
+                                        <img src="images/testimonials/customer3.png" alt="Reviewer">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Anita Desai</h4>
+                                        <div class="review-date">May 5, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h3>Very Fresh!</h3>
+                                    <p>The tomatoes were very fresh and flavorful. They lasted longer than store-bought
+                                        ones. I used them for making sauce and it turned out delicious!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-pagination">
+                            <a href="#" class="page-prev"><i class="fas fa-chevron-left"></i></a>
+                            <a href="#" class="page-number active">1</a>
+                            <a href="#" class="page-number">2</a>
+                            <a href="#" class="page-number">3</a>
+                            <a href="#" class="page-next"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+
+                        <div class="write-review">
+                            <h3>Write a Review</h3>
+                            <form class="review-form">
+                                <div class="form-group">
+                                    <label>Your Rating</label>
+                                    <div class="rating-select">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-title">Review Title</label>
+                                    <input type="text" id="review-title" placeholder="Give your review a title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-content">Review</label>
+                                    <textarea id="review-content" rows="5"
+                                        placeholder="Write your review here"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="recipes">
+                        <h2>Recipes Using Tomatoes</h2>
+                        <div class="recipes-grid">
+                            <!-- Recipe 1 -->
+                            <div class="recipe-card">
+                                <div class="recipe-image">
+                                    <img src="images/recipes/tomato-soup.png" alt="Tomato Soup">
+                                </div>
+                                <div class="recipe-content">
+                                    <h3>Homemade Tomato Soup</h3>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 30 mins</span>
+                                        <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                    </div>
+                                    <p>A simple and delicious tomato soup made with fresh tomatoes, onions, garlic, and
+                                        herbs.</p>
+                                    <a href="#" class="btn btn-outline">View Recipe</a>
+                                </div>
+                            </div>
+
+                            <!-- Recipe 2 -->
+                            <div class="recipe-card">
+                                <div class="recipe-image">
+                                    <img src="images/recipes/bruschetta.png" alt="Bruschetta">
+                                </div>
+                                <div class="recipe-content">
+                                    <h3>Classic Bruschetta</h3>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 15 mins</span>
+                                        <span><i class="fas fa-utensils"></i> 6 servings</span>
+                                    </div>
+                                    <p>Toasted bread topped with a mixture of diced tomatoes, fresh basil, garlic, and
+                                        olive oil.</p>
+                                    <a href="#" class="btn btn-outline">View Recipe</a>
+                                </div>
+                            </div>
+
+                            <!-- Recipe 3 -->
+                            <div class="recipe-card">
+                                <div class="recipe-image">
+                                    <img src="images/recipes/pasta.png" alt="Pasta">
+                                </div>
+                                <div class="recipe-content">
+                                    <h3>Tomato Basil Pasta</h3>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 25 mins</span>
+                                        <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                    </div>
+                                    <p>A simple pasta dish with fresh tomatoes, basil, garlic, and olive oil. Perfect
+                                        for a quick weeknight dinner.</p>
+                                    <a href="#" class="btn btn-outline">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2 class="section-title">Related Products</h2>
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/spinach.png" alt="Spinach">
+                            <div class="product-tag">Organic</div>
+                            <div class="product-actions">
+                                <button class="action-btn quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn add-to-wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Spinach</h3>
+                            <div class="product-meta">
+                                <span class="product-price">₹40/bunch</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/potatoes.png" alt="Potatoes">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn add-to-wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Fresh Potatoes</h3>
+                            <div class="product-meta">
+                                <span class="product-price">₹30/kg</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/carrots.png" alt="Carrots">
+                            <div class="product-tag">New</div>
+                            <div class="product-actions">
+                                <button class="action-btn quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn add-to-wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Organic Carrots</h3>
+                            <div class="product-meta">
+                                <span class="product-price">₹50/kg</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.7)</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/products/onions.png" alt="Onions">
+                            <div class="product-actions">
+                                <button class="action-btn quick-view"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn add-to-wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Red Onions</h3>
+                            <div class="product-meta">
+                                <span class="product-price">₹35/kg</span>
+                                <span class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </span>
+                            </div>
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Vegrowpure Logo">
+                    </div>
+                    <p>Connecting farmers directly with consumers for fresh, organic vegetables at fair prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Mumbai, Maharashtra, India</li>
+                        <li><i class="fas fa-phone-alt"></i> +91 7030727648</li>
+                        <li><i class="fas fa-envelope"></i> info@vegrowpure.in</li>
+                        <li><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vegrowpure. All Rights Reserved.</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+/* Product Page UI Fixes */
+
+/* Fix the overall layout structure */
+.products-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+
+/* Improve sidebar styling */
+.products-sidebar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-widget {
+    margin-bottom: 25px;
+}
+
+.sidebar-widget h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Fix category list styling */
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.category-list li a {
+    display: flex;
+    justify-content: space-between;
+    color: #212529;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+.category-list li a:hover,
+.category-list li a.active {
+    color: #4CAF50;
+    padding-left: 5px;
+}
+
+/* Fix price filter styling */
+.price-filter {
+    margin-top: 15px;
+}
+
+.price-slider {
+    position: relative;
+    height: 5px;
+    background-color: #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.slider-track {
+    position: absolute;
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.slider-min,
+.slider-max {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    top: -7.5px;
+    cursor: pointer;
+    z-index: 2;
+    appearance: none;
+    pointer-events: all;
+}
+
+.price-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.price-input {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.price-input label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.price-input input {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+/* Fix checkbox styling */
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Fix products content area */
+.products-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+/* Fix products header */
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.products-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.products-sort select {
+    padding: 8px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.products-view {
+    display: flex;
+    gap: 10px;
+}
+
+.view-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-btn.active,
+.view-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Fix products grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/* Fix product card styling */
+.product-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-weight: 600;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+.btn-add-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    background-color: #2E7D32;
+}
+
+/* Fix pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/* Fix quick view modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.product-quick-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Responsive fixes */
+@media (max-width: 992px) {
+    .products-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .products-sidebar {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .product-quick-view {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-quick-actions {
+        flex-direction: column;
+    }
+}
