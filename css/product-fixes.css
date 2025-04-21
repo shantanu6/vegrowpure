@@ -200,6 +200,9 @@
     position: relative;
     height: 200px;
     overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
 }
 
 .product-image img {

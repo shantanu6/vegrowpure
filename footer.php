@@ -19,6 +19,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
+                        <li><a href="farmers.html">Meet Our Farmers</a></li>
                     <li><a href="careers.php">Careers</a></li>
                     <li><a href="contact.php">Contact</a></li>
                 </ul>
