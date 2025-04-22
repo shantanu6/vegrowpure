@@ -2105,11 +2105,13 @@ footer {
 }
 
 .product-image {
-    width: 80px;
     height: 80px;
     border-radius: var(--border-radius);
     overflow: hidden;
     margin-right: 15px;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes the image container square */
+    flex-shrink: 0;
 }
 
 .product-details h3 {
