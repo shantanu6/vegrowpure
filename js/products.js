@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reviews: 15,
             availability: "in-stock",
             image:
-                "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3",
+                "https://images.unsplash.com/photo-1675501347570-cac3b8cbd5c2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3",
             description: "Crisp and juicy green capsicums, perfect for stir-fries, salads, and stuffing. Rich in vitamin C.",
         },
         {
